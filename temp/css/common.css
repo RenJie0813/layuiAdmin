@@ -1,0 +1,294 @@
+.layui-layer-loading>.layui-layer-loading0{
+    padding-top: 35px;
+    text-align: center;
+    color: #f2f2f2;
+    text-shadow: 1px 2px 2px #000;
+}
+#scroll{-webkit-overflow-scrolling : touch;overflow-y: scroll;width: 100%;height:100%;position:absolute; padding: 0;}
+.relative{position: relative}
+.header{
+    padding: 10px 20px 4px 20px;
+    background: #fff;
+    border:1px solid #C6C6C6;
+    border-radius: 2px;
+}
+.layui-layer-content .layui-form-item{
+    margin-bottom: 15px;
+}
+.layui-form-item{
+    margin-bottom: 2px;
+}
+.layui-table{
+    margin: 0 auto 10px;
+}
+.layui-table td, .layui-table th{
+    padding:4px 10px;
+    font-size: 12px;
+    text-align: center;
+}
+.layui-table td:first-child{
+    text-align: center;
+}
+#alist>a{
+    display: none;
+}
+.right{
+    float: right;
+}
+.blue{
+    color:#01AAED;
+    font-weight: 600;
+    font-size: 12px;
+}
+.center{
+    padding: 15px;
+}
+.layui-btn:not(.layui-btn-primary){
+    text-shadow: 1px 1px 2px #000;
+}
+.layui-btn.layui-btn-disabled{
+    line-height: 36px;
+    text-shadow: 1px 1px 2px #fff;
+}
+.layui-breadcrumb a,.f12{
+    font-size: 12px;
+}
+.layui-form-checkbox{
+    height: 16px;
+    line-height: 14px;
+    padding-right: 14px;
+    margin:0 auto;
+}
+#search .layui-form-label,#addPromotion .layui-form-label{
+    padding: 4px 10px;
+    width: auto;
+    max-width: 80px;
+    font-size: 12px;
+}
+.layui-form-item .layui-inline{
+    margin-bottom: 4px;
+}
+#search .layui-input,#addPromotion .layui-input{
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+}
+.layui-form-checkbox i{
+    width: 18px;
+    font-size: 15px;
+}
+.ck{
+    cursor: pointer;
+}
+input[type='text']{
+    -webkit-appearance: none;
+}
+.top{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background: #fff;
+    margin-top: 10px;
+}
+body .dl.layui-layer{border-radius: .4rem;overflow: hidden;border:2px solid #BBB5B5;max-width: 80%}
+body .dl .layui-layer-title{ color:#2F4056; border: none;padding: 10px;text-align: center;height: 1rem;line-height: 1rem;font-size: 16px}
+body .dl .layui-layer-btn .layui-layer-btn0{background:#009688;border:none;}
+body .dl .layui-layer-btn .layui-layer-btn1{background:transparent;}
+body .dl .layui-layer-content{ padding: 15px 10px;}
+h2{
+    font-size: 18px;
+    padding:10px 0;
+}
+.load{
+    text-align: center;
+    padding:20px;
+}
+.green,.red,.layui-bg-red{
+    color:#fff;
+    padding: 1px 2px;
+}
+.green{
+    background: green;
+}
+.red{
+    background: red;
+}
+.control{
+    min-width: 1024px;
+    max-width: 1280px;
+    position: relative;
+    overflow: hidden;
+    margin:20px auto;
+}
+#backDiv{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    z-index: 99;
+    background-color: rgba(255,255,255,.1);
+}
+.control .layui-form-label{
+    width:90px;
+}
+.control .select{
+    margin-left: 130px;
+}
+.control .layui-form-item{
+    margin-bottom: 15px;
+}
+.btnDiv{
+    position: relative;
+    padding:15px 40px 0 0;
+    overflow: hidden;
+    height:40px;
+}
+button#save{
+    position: absolute;
+    right:110px;
+}
+button#edit{
+    position: absolute;
+    z-index: 100;
+    top:14px;
+    right:200px;
+}
+.lineDiv{
+    border:1px solid #8D8D8D;
+    border-radius: 2px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.control .left,.control .center{
+    float:left;
+    width:250px;
+    margin-right: 30px;
+    padding:0 15px;
+}
+.control .left{
+    padding:0;
+    width:320px;
+    margin:0 40px;
+}
+.table{
+    min-width:524px;
+    width:60%;
+    min-height: 400px;
+    float: left;
+}
+.layui-table .relative{
+    position: relative;
+}
+.relative .delete{
+    right:0;
+}
+#eat>div,#default>div,#robotControl>div,#number>div,#point>div,#yzControl>div,#qzControl>div{
+    margin-bottom: 10px;
+    position: relative;
+    height: 38px;
+}
+.layui-form-item .per{
+    width:64px;
+    height:38px;
+    position: relative;
+}
+.per .layui-input{
+    padding-right: 15px;
+    position: absolute;
+}
+.aim{
+    float: left; margin-left: 60px;position: relative
+}
+.aim .pers,.per .pers{
+    display: block;
+    font-size: 16px;
+    width:16px;
+    height:20px;
+    position: absolute;
+    right:5px;
+    top:10px;
+    overflow: hidden;
+}
+.concat{
+    width:16px;
+    height:20px;
+    font-size: 16px;
+    position: absolute;
+    left:70px;
+    top:8px;
+}
+#add1,#add2,#add3,#add4,#add5,#add6,#add7{
+    display: block;
+    margin:0 auto;
+    width:60px;
+    height:40px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 1px 2px 2px #fff;
+    cursor: pointer;
+}
+.rtp,.num,.random{
+    float: left;
+    height: 38px;
+    line-height: 38px;
+    font-size: 18px;
+ }
+.num{
+    font-size: 14px;
+}
+#rtp{    padding-left: 12px;  }
+.rtp{
+    width:318px;
+}
+.random{
+    width:110px;
+}
+#aims{
+    width: 120px;
+}
+.delete{
+    position: absolute;
+    right:-4px;
+    top:8px;
+    cursor: pointer;
+    text-align: center;
+    width: 20px;
+    height:20px;
+    line-height: 16px;
+    font-size: 32px;
+    overflow: hidden;
+}
+#layer-search-rtp{margin: 3px 0}
+#rtpLog{
+    position: relative;
+    z-index: 999;
+}
+#rtp-result{
+    width: 100%;
+    height: 400px;
+}
+#layer-rtp{
+    padding-right: 25px;
+}
+#layer-rtp .layui-form-label{
+    width: 50px;
+    padding:4px 10px;
+}
+#layer-rtp .layui-input{
+    height: 28px;
+    line-height: 28px;
+}
+
+/*选场*/
+#screenings .pain,#specialControl .pain{
+    padding: 10px 15px 5px;
+    position: relative;
+}
+#screenings .layui-input-inline{
+    width: 116px;
+}
+#screenings .delete,#specialControl .delete{
+    top:18px;
+    right:-1px;
+}

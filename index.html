@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>GMS管理系统</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="icon" href="./images/icon.ico">
+		<link rel="stylesheet" href="layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="css/global.css" media="all">
+	</head>
+	<body>
+		<div class="layui-layout layui-layout-admin" id="header">
+			
+			<div class="layui-header">
+		        <div class="layui-logo">layui 后台布局</div>
+		        <!-- 头部区域（可配合layui已有的水平导航） -->
+		        <ul class="layui-nav layui-layout-left">
+		            <li class="layui-nav-item"><a href="">控制台</a></li>
+		            <li class="layui-nav-item"><a href="">商品管理</a></li>
+		            <li class="layui-nav-item"><a href="">用户</a></li>
+		            <li class="layui-nav-item">
+		                <a href="javascript:;">其它系统</a>
+		                <dl class="layui-nav-child">
+		                    <dd><a href="">邮件管理</a></dd>
+		                    <dd><a href="">消息管理</a></dd>
+		                    <dd><a href="">授权管理</a></dd>
+		                </dl>
+		            </li>
+		        </ul>
+		        <ul class="layui-nav layui-layout-right">
+		          <li class="layui-nav-item" id="welcome">
+							<a href="javascript:;" class="admin-header-user" style="padding-left: 4px">
+								<img src="images/admin.png" />
+								<span id="msg">欢迎您！<b>admin</b></span>
+							</a>
+                            <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                                <dd><a href="#" id="changePwd">修改密码</a></dd>
+                                <dd><a href="#" id="changeUser">退出</a></dd>
+                            </dl>
+					</li>
+		        </ul>
+		    </div>
+			
+			<div class="layui-side layui-bg-black" id="admin-side">
+				<div class="layui-side-scroll" id="admin-navbar-side" lay-filter="side"></div>
+			</div>
+			<div class="layui-body" id="admin-body">
+				<div class="layui-tab admin-nav-card layui-tab-brief" lay-filter="admin-tab">
+					<ul class="layui-tab-title"></ul>
+					<div class="layui-tab-content" id="content"></div>
+				</div>
+			</div>
+			<div class="layui-footer footer footer-demo" id="admin-footer">
+				<div class="layui-main">
+					<p>2017 &copy;LAIZIYIGECHUANQIDENANREN</p>
+				</div>
+			</div>
+			<div class="site-tree-mobile layui-hide">
+				<i class="layui-icon">&#xe602;</i>
+			</div>
+			<div class="site-mobile-shade"></div>
+			<script id="change" type="text/html">
+				<div style="font-size: 14px;padding:10px 10px">
+					<form class="layui-form" action="">
+						<div class="layui-form-item">
+                            <label class="layui-form-label">旧密码</label>
+                            <div class="layui-input-inline">
+                                <input type="password" id="oldPwd" required lay-verify="required|pwd" placeholder="请输入原始密码" autocomplete="off" class="layui-input">
+                            </div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">新密码</label>
+							<div class="layui-input-inline">
+								<input type="password" id="newPwd" required lay-verify="required|pwd" placeholder="请输入新密码" autocomplete="off" class="layui-input">
+							</div>
+						</div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">确认密码</label>
+                            <div class="layui-input-inline">
+                                <input type="password" id="checkPwd" required lay-verify="required|pwd" placeholder="请输入新密码" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="input-block top">
+                            <button class="layui-btn" lay-submit lay-filter="pwd">确定</button>
+                            <button type="reset" class="layui-btn layui-btn-primary resetBtn">取消</button>
+                        </div>
+					</form>
+				</div>
+			</script>
+
+            <script type="text/javascript" src="layui/layui.js"></script>
+			<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+			<script src="./temp/js/common.js"></script>
+			<script src="./js/index.js"></script>
+		</div>
+	</body>
+</html>

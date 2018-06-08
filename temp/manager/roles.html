@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作员角色</title>
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/zTreeStyle/zTreeStyle.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        div.zTreeDemoBackground {width:250px;height:374px;text-align:left;}
+        ul.ztree {margin: 10px 0 10px;border: 1px solid #617775;background: #fff;width:220px;height:360px;overflow-y:scroll;overflow-x:auto;}
+    </style>
+</head>
+<body>
+<section class="container">
+    <div class="header">
+        <form class="layui-form" id="search">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">角色名称:</label>
+                    <div class="layui-input-inline" style="width: 120px;">
+                        <input type="text" name="roleType" lay-verify="required"  autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline right">
+                    <div class="layui-input-inline" style="width: 100px;text-align: center">
+                        <button class="layui-btn layui-btn-small" lay-submit lay-filter="search"><i class="layui-icon">&#xe615;</i> 查询&nbsp;</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <p class="center">
+       <span id="alist" class="layui-breadcrumb" lay-separator="|">
+           <a id="xz" href="#"><i class="layui-icon blue">&#xe61f;</i> 新增</a>
+          <a id="sc" href="#"><i class="layui-icon blue">&#xe640;</i> 删除</a>
+           <a id="pz" href="#"><i class="layui-icon blue">&#xe614;</i> 配置</a>
+        </span>
+    </p>
+    <table class="layui-table layui-form">
+        <thead>
+        <th><input type="checkbox" id="all" name="all" lay-filter="all"></th>
+        <th>序号</th>
+        <th>管理员角色</th>
+        <th>添加人</th>
+        <th>添加时间</th>
+        </thead>
+        <tbody id="checkBoxList">
+            <tr id="load-tr"><td colspan="5"><p class="load">加载中</p></td></tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="5" align="right" id="pages"></td>
+        </tr>
+        </tfoot>
+    </table>
+</section>
+
+<script id="tree" type="text/html">
+    <div class="layui-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label">管理员角色:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="user" id="name"  autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">角色权限:</label>
+            <div class="layui-input-inline">
+                <div class="zTreeDemoBackground left">
+                    <ul id="treeDemo" class="ztree"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="input-block top">
+            <button class="layui-btn" id="getCheck">提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary resetBtn">取消</button>
+        </div>
+    </div>
+</script>
+
+<script src="../../layui/layui.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../../plugins/jquery.ztree.core.min.js"></script>
+<script src="../../plugins/jquery.ztree.excheck.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/manager/role.js"></script>
+</body>
+</html>
